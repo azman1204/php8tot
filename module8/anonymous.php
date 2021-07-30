@@ -11,3 +11,6 @@ $say = function () use ($message) {
 };
 
 $say(); // output : Hi
+
+$message = 'hello';
+$say();
