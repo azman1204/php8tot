@@ -14,3 +14,14 @@ function printme(Car $c) : string {
 class Car {}
 $car = new Car();
 echo printme($car);
+
+// callable / anonymous
+$tambah = function($no1, $no2) {
+  return $no1 + $no2;
+};
+
+function cetak(int $num1, int $num2, callable $func) : int {
+  return $func($num1, $num2);
+}
+
+echo cetak(4, 3, $tambah);
